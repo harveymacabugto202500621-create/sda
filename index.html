@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My POS Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Coffee Shop POS</h1>
+
+<div id="main">
+
+  <!-- left side: menu -->
+  <div id="menu"></div>
+
+  <!-- right side: order -->
+  <div id="orderBox">
+    <h2>Order</h2>
+    <div id="orderList"></div>
+    <p>Total: <b id="total">₱0</b></p>
+    Cash: <input type="number" id="cash"><br><br>
+    <button onclick="pay()">Pay</button>
+    <button onclick="clearOrder()">Clear</button>
+    <p id="message"></p>
+    <hr>
+    <p>Today's sales: <b id="todaySales">₱0</b></p>
+    <button onclick="showDashboard()">Dashboard</button>
+    <button onclick="showInventory()">Inventory</button>
+  </div>
+
+</div>
+
+<!-- dashboard (hidden at first) -->
+<div id="dashboard">
+  <h2>Dashboard</h2>
+  <p>Total sales: <b id="dTotal"></b></p>
+  <p>Number of orders: <b id="dCount"></b></p>
+  <p>Average order: <b id="dAverage"></b></p>
+  <h3>Best sellers</h3>
+  <div id="dBest"></div>
+  <h3>Last 5 orders</h3>
+  <div id="dRecent"></div>
+  <br>
+  <button onclick="hideDashboard()">Back</button>
+</div>
+
+<!-- inventory (hidden at first) -->
+<div id="inventory">
+  <h2>Inventory</h2>
+  <p>Items with 5 or less are marked LOW.</p>
+  <div id="invList"></div>
+  <br>
+  <button onclick="hideInventory()">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e6d3;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: brown;
+}
+
+#main {
+  display: flex;
+}
+
+/* menu */
+#menu {
+  width: 60%;
+}
+
+.item {
+  width: 130px;
+  height: 135px;
+  margin: 5px;
+  background-color: white;
+  border: 2px solid brown;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #ffe0b3;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+/* order box */
+#orderBox {
+  width: 40%;
+  background-color: white;
+  border: 2px solid brown;
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.line {
+  margin-bottom: 6px;
+}
+
+#message {
+  color: green;
+  font-weight: bold;
+}
+
+#orderBox button {
+  padding: 8px 15px;
+  background-color: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* dashboard */
+#dashboard, #inventory {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #f5e6d3;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.item:disabled {
+  background-color: #ddd;
+  color: gray;
+  cursor: not-allowed;
+}
+
+.low {
+  color: red;
+  font-weight: bold;
+}
